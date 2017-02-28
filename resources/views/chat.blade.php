@@ -68,7 +68,7 @@
 					</div>
 					<!-- /.box-body -->
 					<div class="box-footer">
-						<chat-form :user=" {{ Auth::user() }}" v-on:messageSent="addMesage"></chat-form>
+						<chat-form :user=" {{ Auth::user() }}" v-on:messagesent="addMessage"></chat-form>
 					</div>
 					<!-- /.box-footer-->
 				</div>

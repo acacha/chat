@@ -1,12 +1,12 @@
 <template>
-    <form action="#" method="post">
+    <div>
         <div class="input-group">
             <input type="text" name="message" placeholder="Type Message ..." class="form-control" v-model="newMessage" @keyup.enter="sendMessage">
             <span class="input-group-btn">
-                <button type="submit" class="btn btn-primary btn-flat" @click="sendMessage">Send</button>
+                <button type="button" class="btn btn-primary btn-flat" @click="sendMessage">Send</button>
             </span>
         </div>
-    </form>
+    </div>
 </template>
 
 <script>
@@ -19,7 +19,7 @@
         },
       methods: {
             sendMessage() {
-                this.$emit('messageSent', {
+                this.$emit('messagesent', {
                     user: this.user,
                     message: this.newMessage
                 });
