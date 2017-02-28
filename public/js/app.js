@@ -12188,6 +12188,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = {
   props: ['messages']
@@ -32915,7 +32917,30 @@ if (false) {
 /* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports={render:function(){},staticRenderFns:[]}
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "direct-chat-messages"
+  }, _vm._l((_vm.messages), function(message) {
+    return _c('div', {
+      staticClass: "direct-chat-msg"
+    }, [_c('div', {
+      staticClass: "direct-chat-info clearfix"
+    }, [_c('span', {
+      staticClass: "direct-chat-name pull-left"
+    }, [_vm._v(_vm._s(message.user.name))]), _vm._v(" "), _c('span', {
+      staticClass: "direct-chat-timestamp pull-right"
+    }, [_vm._v(_vm._s(message.created_at))])]), _vm._v(" "), _c('img', {
+      staticClass: "direct-chat-img",
+      attrs: {
+        "src": "/img/user1-128x128.jpg",
+        "alt": "Message User Image"
+      }
+    }), _vm._v(" "), _c('div', {
+      staticClass: "direct-chat-text"
+    }, [_vm._v("\n            " + _vm._s(message.message) + "\n        ")])])
+  }))
+},staticRenderFns: []}
+module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {

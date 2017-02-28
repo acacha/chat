@@ -25,9 +25,6 @@
 					</div>
 					<!-- /.box-header -->
 					<div class="box-body">
-						<!-- Conversations are loaded here -->
-						<div class="direct-chat-messages">
-
 							<chat-messages v-bind:messages="messages"></chat-messages>
 
 							<!-- Message to the right -->
@@ -44,7 +41,6 @@
 								{{--<!-- /.direct-chat-text -->--}}
 							{{--</div>--}}
 							<!-- /.direct-chat-msg -->
-						</div>
 						<!--/.direct-chat-messages-->
 
 						<!-- Contacts are loaded here -->
