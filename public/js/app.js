@@ -12388,11 +12388,16 @@ Vue.component('login-input-field', __webpack_require__(50));
 
 
 
+// window.Echo = new Echo({
+//     broadcaster: 'pusher',
+//     key: '0beb4667296e55481ee9',
+//     cluster: 'mt1',
+//     encrypted: true
+// });
+
 window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
-  broadcaster: 'pusher',
-  key: '0beb4667296e55481ee9',
-  cluster: 'mt1',
-  encrypted: true
+  broadcaster: 'socket.io',
+  host: 'http://localhost:3000'
 });
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
