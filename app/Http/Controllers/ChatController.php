@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Acacha\Chat\Http\Controllers;
 
-use App\Events\MessageSent;
-use App\Message;
+use Acacha\Chat\Events\MessageSent;
+use Acacha\Chat\Message;
 use Auth;
 use Illuminate\Http\Request;
 
 /**
  * Class ChatController.
  *
- * @package App\Http\Controllers
+ * @package Acacha\Chat\Http\Controllers
  */
 class ChatController extends Controller
 {

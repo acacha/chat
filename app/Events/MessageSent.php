@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Events;
+namespace Acacha\Chat\Events;
 
-use App\Message;
-use App\User;
+use Acacha\Chat\Message;
+use Acacha\Chat\User;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Broadcasting\PrivateChannel;
@@ -15,7 +15,7 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 /**
  * Class MessageSent.
  *
- * @package App\Events
+ * @package Acacha\Chat\Events
  */
 class MessageSent implements ShouldBroadcast
 {

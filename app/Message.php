@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Acacha\Chat;
 
 use Illuminate\Database\Eloquent\Model;
 
